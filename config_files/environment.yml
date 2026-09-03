@@ -1,0 +1,56 @@
+name: mlops-rag
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+
+  # --- Core científico / ML ---
+  - numpy
+  - pandas
+  - polars
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - jupyterlab
+  - matplotlib
+  - pytest
+
+  # --- pip para el resto (más actualizado y con mejor soporte) ---
+  - pip
+  - pip:
+      # Deep learning
+      - torch
+      - transformers
+      - accelerate
+      - sentence-transformers
+
+      # MLOps / experiment tracking / pipelines
+      - mlflow
+      - dvc
+      - hydra-core
+      - optuna
+      - evidently
+      - bentoml
+      - prefect
+      - great_expectations
+
+      # RAG / LLM / Agentic AI
+      - langchain
+      - langgraph
+      - llama-index
+      - chromadb
+      - qdrant-client
+      - anthropic
+      - openai
+      - tiktoken
+      - ragas
+      - instructor
+
+      # Utilidades
+      - pydantic
+      - fastapi
+      - uvicorn
+      - python-dotenv
+      - ruff
