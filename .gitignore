@@ -214,5 +214,38 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# macOS System Files
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+
+# ==========================================
+# Anaconda / Conda / Jupyter
+# ==========================================
+# Anaconda project files & environments
+.anaconda/
+.conda/
+.condarc
+conda-meta/
+*.conda
+*.tar.bz2
+
+# Conda environment folder (if created locally inside project)
+envs/
+
+# Jupyter & IPython extra cache
+.ipynb_checkpoints/
+.jupyter/
+
