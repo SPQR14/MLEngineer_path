@@ -26,7 +26,7 @@ def setup_logger(name):
     """
 
     # Defines the root directory of tis file
-    BASE_DIR = Path(__file__).resolve().parent
+    BASE_DIR = Path(__file__).resolve().parents[2]
     # Defines log directory and creates it if it doesn't exist
     LOG_DIR = BASE_DIR / f"{name.capitalize()}logs"
     LOG_DIR.mkdir(exist_ok=True)

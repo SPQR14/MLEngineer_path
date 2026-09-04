@@ -1,7 +1,17 @@
+#import os
 import logging
-import logger
 from random import randint
 from random import random
+from utils_and_snipplets.python import logger
+
+"""
+root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if root_path not in sys.path:
+    sys.path.insert(0, root_path)
+
+
+from utils_and_snipplets.python import logger
+"""
 
 logger.setup_logger("app1")
 
