@@ -1,6 +1,7 @@
-name: mlops-rag
+name: mlops
 channels:
   - conda-forge
+  - anaconda
   - defaults
 
 dependencies:
@@ -16,6 +17,15 @@ dependencies:
   - jupyterlab
   - matplotlib
   - pytest
+  - catboost
+  - seaborn
+  - plotly
+  - scipy
+  - statsmodels
+  - sympy
+  - prophet
+  - ipykernel
+  - nb_conda_kernels
 
   # --- pip para el resto (más actualizado y con mejor soporte) ---
   - pip
@@ -25,6 +35,8 @@ dependencies:
       - transformers
       - accelerate
       - sentence-transformers
+      - diffusers
+      - tensorflow
 
       # MLOps / experiment tracking / pipelines
       - mlflow
@@ -54,3 +66,9 @@ dependencies:
       - uvicorn
       - python-dotenv
       - ruff
+      - beautifulsoup4
+      - lxml
+      - sqlalchemy
+      - html5lib
+      - openpyxl
+
