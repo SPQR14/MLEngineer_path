@@ -1,6 +1,7 @@
 import logging
 from pathlib import Path
 
+
 def setup_logger(name):
 
     """
@@ -43,5 +44,8 @@ def setup_logger(name):
         force=True
     )
 
-    logging.debug(f"Logger '{name}' has been set up with DEBUG level and file handler '{name}.log'")
-
+    logging.debug(
+        "Logger '%s' has been set up with DEBUG level and file handler '%s.log'",
+        name,
+        name,
+    )

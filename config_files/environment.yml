@@ -1,6 +1,6 @@
 name: mlops
 channels:
-  - conda-forge
+  - conda-forge 
   - anaconda
   - defaults
 
