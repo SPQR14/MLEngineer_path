@@ -50,7 +50,7 @@ def dividir(a, b):
         return None
     finally:
         log.info("Sale de la función dividir")
-    
+
 
 def potencia(a, b):
     log.debug(f"Entra a la función potencia con a={a} y b={b}")
